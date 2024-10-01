@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import Sidebar from './components/Sidebar';
+import Dashboard from './components/Dashboard';
+import Products from './components/Products';
+import Orders from './components/Orders';
+import Users from './components/Users';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="d-flex">
+        {/* Sidebar */}
+        <Sidebar />
+
+        {/* Main Content */}
+        <Container fluid className="p-4">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/users" element={<Users />} />
+          </Routes>
+        </Container>
+      </div>
+    </Router>
   );
 }
 

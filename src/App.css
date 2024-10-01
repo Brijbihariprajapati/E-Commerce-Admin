@@ -2,37 +2,95 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Admin Panel Custom CSS */
+html, body {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.container-fluid {
+  flex-grow: 1;
+}
+
+.sidebar {
+  background-color: #343a40;
+  min-width: 250px;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #495057;
+  padding-left: 15px;
+  transition: all 0.3s;
+}
+/* Custom Sidebar Styles */
+html, body {
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container-fluid {
+  flex-grow: 1;
+  margin-left: 250px; /* Offset for sidebar */
+  padding-top: 20px;
+}
+
+.sidebar {
+  background-color: #343a40;
+  min-width: 250px;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #495057;
+  padding-left: 15px;
+  transition: all 0.3s;
+}
+
+.admin-profile {
+  margin-top: auto;
+  text-align: left;
+}
+
+.admin-profile a {
+  font-size: 14px;
+  color: #ced4da;
+  text-decoration: none;
+}
+
+.admin-profile a:hover {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: flex; /* Flexbox to align icon and text */
+  align-items: center; /* Vertically center the icon and text */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar a svg {
+  margin-right: 10px; /* Space between icon and text */
 }
