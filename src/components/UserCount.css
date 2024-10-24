@@ -1,0 +1,14 @@
+.custom-card {
+    transition: transform 0.2s;
+    border-radius: 10px;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+}
+
+.count {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold;
+    margin: 0;
+}

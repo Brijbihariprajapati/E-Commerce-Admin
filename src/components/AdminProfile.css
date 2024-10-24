@@ -1,0 +1,97 @@
+/* src/components/AdminProfile.css */
+
+/* Container */
+.admin-profile-wrapper {
+    margin: -24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+  }
+  
+  .admin-profile-container {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 40px 50px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .admin-profile-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #333;
+  }
+  
+  /* Profile Picture Section */
+  .profile-picture-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1abc9c;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-picture:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Profile Details */
+  .profile-details {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .profile-details p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .loading, .error-message {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    padding: 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    width: 100%;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 480px) {
+    .admin-profile-container {
+      padding: 30px 20px;
+    }
+  
+    .profile-picture {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  

@@ -1,10 +1,18 @@
-import React from 'react';
 
-function Dashboard() {
+import UserCount from './UserCount';
+import OrderDashBoard from './OrderDashBoard';
+import MessageDashboard from './MessageDashboard';
+
+
+function Dashboard({logoutaction}) {
+  
+ 
   return (
     <div>
       <h1>Admin Dashboard</h1>
-      <p>Welcome to the admin dashboard. From here, you can manage products, orders, and users.</p>
+      <UserCount logoutaction={logoutaction}/>
+      <OrderDashBoard/>
+      <MessageDashboard/>
     </div>
   );
 }
